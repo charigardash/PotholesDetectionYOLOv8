@@ -26,8 +26,12 @@ Run the code with mentioned command below.
 
 + For training the data
   
-  ```!yolo task=detect mode=train model=yolov8m.pt data={dataset.location}/data.yaml epochs={number of epochs} imgsz=640 ```
+  ```
+  !yolo task=detect mode=train model=yolov8m.pt data={dataset.location}/data.yaml epochs={number of epochs} imgsz=640
+   ```
 + For yolov8 segmentation + Tracking & prediction
   
-  ```!yolo task=detect mode=predict model={HOME}/runs/detect/train/weights/best.pt conf=0.25 source='/content/drive/MyDrive/demo.mp4' ```
+  ```
+  !yolo task=detect mode=predict model={HOME}/runs/detect/train/weights/best.pt conf=0.25 source='/content/drive/MyDrive/demo.mp4'
+  ```
 
